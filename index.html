@@ -320,6 +320,70 @@
                      <h3 class="text-[#030712] font-medium">Total Price</h3>
                      <h3 class="text-[#030712] font-medium">BDT <span id="total-price">00</span></h3>
                   </div>
+                  
+                  <!-- Coupon Input -->
+                  <div id="coupon-container" class="bg-white w-full p-2 flex justify-between rounded-xl">
+                     <input id="coupon-input" type="text" value="" placeholder="Have any coupon?" class="pl-3 rounded-lg w-full">
+                     <button id="input-btn" class="btn  bg-[#1DD100] text-white btn-disabled">Apply</button>
+                  </div>
+                  <div class="flex justify-between py-4">
+                     <h3 class="text-[#030712] font-medium">Grand Total</h3>
+                     <h3 class="text-[#030712] font-medium">BDT <span id="grand-total">00</span></h3>
+                  </div>
+               </div>
+
+               <!-- Passenger Info -->
+               <div class="font-inter">
+                  <div class="mt-6">
+                     <h1 class="text-[#030712] font-semibold">Passenger Name*</h1>
+                     <div class="">
+                        <input id="passenger-name" class="w-full px-6 py-4 border-[#0307121A] border-2 rounded-xl mt-3" type="text"
+                           placeholder="Enter your name">
+                     </div>
+                  </div>
+                  <div class="mt-6">
+                     <h1 class="text-[#030712] font-semibold">Phone Number*</h1>
+                     <div class="">
+                        <input  id="passenger-number" class="w-full px-6 py-4 border-[#0307121A] border-2 rounded-xl mt-3" type="number"
+                           placeholder="Enter your phone number">
+                     </div>
+                  </div>
+                  <div class="mt-6">
+                     <h1 class="text-[#030712] font-semibold">Email ID</h1>
+                     <div class="">
+                        <input class="w-full px-6 py-4 border-[#0307121A] border-2 rounded-xl mt-3" type="text"
+                           placeholder="Enter your email id">
+                     </div>
+                  </div>
+                 <div>
+                  <button  id="modal-btn"
+                  class="btn w-full bg-[#1DD100] text-white font-raleway mt-6 text-xl font-extrabold font-raleway btn-disabled" onclick="my_modal_5.showModal()">Next</button>
+                 </div>
+                     <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle bg-[#F7F8F8]">
+                        <div class="modal-box text-center">
+                           <img src="images/success.png" alt="" class="mx-auto mt-6">
+                           <h3 class="font-bold text-lg text-[#27AE60] my-8">SUCCESS</h3>
+                          <p class="text-[#4A4A4A] font-medium">Thank you for Booking Our Bus Seats. 
+                           We are working hard to find the best service and deals for you.</p>
+                           <p class="text-[#4A4A4A] mt-4">Shortly you will find a confirmation in your email.</p>
+                          <div class="modal-action">
+                            <form method="dialog">
+                              <div class="flex justify-center mr-24">
+                                 <button class="btn bg-[#27AE60] text-white btn-wide text-center rounded-full mt-4 mb-6 text-xl">Continue</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </dialog>
+               </div>
+               <div class="flex justify-around font-inter text-[#03071299] mt-4 underline">
+                  <h3><a href="#">Terms and Conditions</a></h3>
+                  <h3><a href="#">Cancellation Policy</a></h3>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
 
 </body>
 </html>
